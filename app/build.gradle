@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.applica.testchat"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        dataBinding true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    // Google Sign In SDK
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    // Firebase SDK
+    implementation platform('com.google.firebase:firebase-bom:26.4.0')
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Firebase UI Library
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}
+
+// Apply the 'google-services' plugin
+apply plugin: 'com.google.gms.google-services'

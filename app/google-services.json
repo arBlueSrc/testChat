@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "149246476517",
+    "project_id": "testchat-94c5b",
+    "storage_bucket": "testchat-94c5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149246476517:android:66e1668c1963d868aa540c",
+        "android_client_info": {
+          "package_name": "com.applica.testchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149246476517-divafdvthsm4bf070vi4hjlkqbam00bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.applica.testchat",
+            "certificate_hash": "4d0a456bb542576b99f734412c14ff0e135eb030"
+          }
+        },
+        {
+          "client_id": "149246476517-5dt536qgg8r1migp2iier3sgg3pq4hq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHpCIGIpDyDOuLog0DbhDd7oGCacoLlUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149246476517-5dt536qgg8r1migp2iier3sgg3pq4hq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
